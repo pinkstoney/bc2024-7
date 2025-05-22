@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD ["npm", "run", "dev"] 
+CMD npx nodemon -L --inspect=0.0.0.0 index.js
