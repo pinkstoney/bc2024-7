@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "0fa162a1-6f95-4502-8ec8-64f519e5ad2b",
+		"name": "DevicesAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44969368",
+		"_collection_link": "https://bohdan-9727648.postman.co/workspace/Bohdan's-Workspace~0b0e2d1e-29e6-4872-843c-25b9290361fb/collection/44969368-0fa162a1-6f95-4502-8ec8-64f519e5ad2b?action=share&source=collection_link&creator=44969368"
+	},
+	"item": [
+		{
+			"name": "Register Device Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"device_name\": \"Laptop ThinkPad X1\",\n    \"serial_number\": \"LP123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All Devices Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/devices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Take Device Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_name\": \"John Doe\",\n    \"serial_number\": \"LP123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/take",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"take"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return Device Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"serial_number\": \"LP123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/return",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"return"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Device Info Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/devices/LP123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"devices",
+						"LP123456"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
